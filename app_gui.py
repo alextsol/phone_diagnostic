@@ -114,6 +114,7 @@ class DiagnosticApp:
         # Reset the iterator and responses for the next use
         self.symptoms_iter = iter(diagnoses.items())
         self.symptom_responses = {}
+        self.root.destroy()
 
 def run_app():
     root = tk.Tk()
